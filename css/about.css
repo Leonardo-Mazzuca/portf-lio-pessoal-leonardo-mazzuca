@@ -105,6 +105,9 @@
     font-size: 2.5vmin;
 }
 
+.ancora__dowload_curriculo button{
+    visibility: hidden;
+}
 
 @media (max-width: 600px) {
     .about__descricoes_expecificas{

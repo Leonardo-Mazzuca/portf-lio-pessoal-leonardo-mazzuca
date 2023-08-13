@@ -88,7 +88,10 @@
 
 }
 
-.ancora__dowload_curriculo{
+
+
+
+.ancora__dowload_curriculo button{
     color: var(--branco);
     font-size: 2vmin;
     width: 50%;
@@ -96,17 +99,15 @@
     text-align: center;
     background: var(--azul-escuro);
     transition: .8s;
+    outline: none;
+    border: none;
 }
 
-.ancora__dowload_curriculo:hover{
+.ancora__dowload_curriculo button:hover{
     transform: scale(1.1);
     box-shadow: 1px 1px 10px var(--azul-escuro2);
     transition: .5s;
     font-size: 2.5vmin;
-}
-
-.ancora__dowload_curriculo button{
-    visibility: hidden;
 }
 
 @media (max-width: 600px) {

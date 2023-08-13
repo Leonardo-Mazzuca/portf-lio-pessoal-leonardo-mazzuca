@@ -1,0 +1,368 @@
+header{
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+/* ============================ menu mobile ============================  */
+
+.navigation_menu-hamburger{
+    display: none;
+    top: 20px;
+    height: 20px;
+    width: 250px;
+    margin-right: 1rem;
+
+
+
+}
+
+.toggle{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: var(--branco);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--light-blue);
+    font-weight: 700;
+    padding: 1rem;
+
+}
+
+.toggle::before{
+    content: 'Menu';
+    margin-right: 0.5rem;
+}
+
+.toggle.active::before{
+    content: 'Minimizar';
+}
+
+.toggle .span_menu-hamburger{
+    position: relative;
+    width: 20px;
+    height: 50px;  
+}
+
+.toggle .span_menu-hamburger::before{
+    content: '';
+    position: absolute; 
+    top: 20px;
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    background: var(--light-blue);
+    transition: .5s;
+}
+
+.toggle .span_menu-hamburger::after{
+    content: '';
+    position: absolute; 
+    bottom: 20px;
+    left: 0;
+    width: 100%; 
+    height: 2px;
+    background: var(--light-blue);
+    transition: .5s;
+}
+
+.toggle.active .span_menu-hamburger::before{
+    transform: rotate(225deg);
+    top: 24px;
+    
+}
+
+.navegador__menu_mobile{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navegador__menu_mobile .navegador__menu_mobile__list{
+    position: relative;
+
+}
+
+.toggle.active .span_menu-hamburger::after{
+    transform: rotate(135deg);
+    bottom: 24px;
+    
+}
+
+.navegador__menu_mobile{
+    position: relative;
+}
+
+.navegador__menu_mobile .navegador__menu_mobile__list{
+    position: relative;
+    transition:  0.5s;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-255px);
+    transition-delay: calc(0.1s * var(--i));
+}
+
+.navegador__menu_mobile__list a{
+    color: var(--preto);
+    display: block;
+    padding: 10px 20px;
+    background: var(--branco);
+    height: auto;
+    transition: .5s;
+
+}
+
+.navigation_menu-hamburger.active .navegador__menu_mobile
+.navegador__menu_mobile__list{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px);
+
+}
+
+.navegador__menu_mobile
+.navegador__menu_mobile__list a:hover{
+    background: var(--cinza-light);
+    color: var(--light-blue);
+
+}
+
+/* ============================ fim do menu mobile ============================  */
+
+/* /*============================ header content ============================*/ 
+
+.header__titulo{
+    color: var(--branco);
+    padding-left: 0.2em;
+    font-size: 2.7rem;
+}
+
+.header__titulo_set{
+    color: var(--cinza-light);
+
+}
+
+.header__nav_menu{    
+    width: 800px;
+    height: 10vh;
+    position: relative;
+    background: var(--cinza-light);
+    box-shadow: 0 2px 0 3px rgba(0,0,0, .1);
+    font-size: 0;
+    text-align: center;
+}
+
+
+.navegador__menu{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.header__nav_menu .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    background: var(--branco);
+    transition: width 0.5s, left 0.5s;
+    left: 0;
+
+} 
+
+.header__nav_menu .navegador__item{
+    text-align: center;
+    z-index: 1;
+    position: relative;
+    padding-left: 1em;
+}
+
+.navegador_item__link{
+    color: var(--preto);
+    line-height: 10vh;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2vh;
+    transition: ease 0.5s;
+}
+
+/*============================ fim header content ============================*/ 
+
+
+
+
+/*============================ nav menu animation ============================*/
+
+.navegador__item.active ~ .animation {
+    width: 20%;
+    left: 0;
+    transition: ease .5s;
+}
+
+.navegador__item.active a{
+    transition: ease .5s;
+}
+
+.navegador__item.active a{
+    color: var(--light-blue);
+    transition: ease .5s;
+}
+
+.navegador__item.active:nth-child(1) ~ .animation {
+    left: 0;
+}
+
+.navegador__item.active:nth-child(2) ~ .animation {
+    left: 20%;
+}
+
+.navegador__item.active:nth-child(3) ~ .animation {
+    left: 40%;
+}
+
+.navegador__item.active:nth-child(4) ~ .animation {
+    left: 60%;
+}
+
+.navegador__item.active:nth-child(5) ~ .animation {
+    left: 80%;
+}
+
+
+nav .start_home, .navegador__item:nth-child(1):hover~.animation{
+    width: 20%;
+    left: 0;
+}
+nav .start_about, .navegador__item:nth-child(2):hover~.animation{
+    width: 20%;
+    left: 20%;
+}
+nav .start_home, .navegador__item:nth-child(3):hover~.animation{
+    width: 20%;
+    left: 40%;
+}
+nav .start_home, .navegador__item:nth-child(4):hover~.animation{
+    width: 20%;
+    left: 60%;
+}
+nav .start_home, .navegador__item:nth-child(5):hover~.animation{
+    width: 20%;
+    left: 80%; 
+}
+
+nav .start_home, .navegador__item.active ~.animation{
+    width: 20%;
+    
+}
+
+.navegador__item:nth-child(1){
+    width: 20%;
+
+}
+
+.navegador__item:nth-child(2){
+    width: 20%;
+    padding-left: 1rem;
+ 
+}
+.navegador__item:nth-child(3){
+    width: 20%;
+    padding-left: 1.5rem;
+
+}
+.navegador__item:nth-child(4){
+    width: 20%;
+    padding-left: 2rem;
+
+}
+.navegador__item:nth-child(5){
+    width: 23%;
+    padding-left: 1.7rem;
+}
+
+.navegador__item.active a{
+    color: var(--);
+}
+
+/*============================ fim nav menu animation ============================*/
+
+/* BREAKPOINTS */
+
+@media (max-width: 1200px) {
+
+    .navigation_menu-hamburger{
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .toggle::before{
+        content: 'Menu';
+        font-size: 3vh;
+
+    }
+
+    
+    .navegador__menu_mobile__list a{
+        font-size: 2vh;
+
+    }
+
+    header{
+        gap: 2rem;
+    }
+
+    
+    
+
+
+    
+}
+
+
+@media (max-width: 834px){
+
+
+
+
+    nav{
+        display: none;
+    }
+
+    .header__nav_menu{
+        display: none;
+     }
+
+     .header__nav_menu, .animation{
+        background: none;
+     }
+
+
+
+
+}
+
+@media (min-width: 835px) and (max-width: 1200px){
+
+    nav{
+        display: none;
+    }
+
+
+         
+}
+
+
+

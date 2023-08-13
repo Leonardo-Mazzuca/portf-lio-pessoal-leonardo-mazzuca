@@ -1,0 +1,132 @@
+@import url("css/header.css");
+@import url("css/apresentacao.css");
+@import url("css/about.css");
+@import url("css/competencias.css");
+@import url("css/footer.css");
+
+
+/* css do about  */
+@import url("css/nav/skills-about.css");
+/* css dos projetos */
+@import url("css/projects/recent-projects.css");
+
+/* css dos serviços */
+
+@import url("css/servico/servico.css");
+
+/* css do contato */
+@import url("css/contato/contato-about.css");
+
+@import url("css/obrigado/obrigado.css");
+
+
+
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Nunito+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Montserrat+Alternates:wght@300&family=Nunito+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@300;400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lugrasimo&family=Montserrat+Alternates:wght@300;400;500&family=Nunito+Sans:wght@300&family=PT+Sans+Narrow&family=Poppins:wght@300;400;500;700&family=Qwigley&display=swap');
+
+
+
+:root{
+    --font-title: 'Lato', sans-serif;
+    --cool-font: 'Dancing Script', cursive;
+    --main-font:'Montserrat Alternates', sans-serif;
+    --font-assinatura: 'Qwigley', cursive;
+    --font-size-default: 3.5vmin;
+    --font-size-title: 5vh;
+    --border-radius-default: 15px;
+
+    --main-gradient: rgb(7,7,8);
+    --main-gradient: linear-gradient(180deg, rgba(7,7,8,1) 0%, rgba(16,15,17,1) 48%, rgba(6,5,6,1) 100%);
+    
+    --gradient-bicolor: rgb(255,164,204);
+    --gradient-bicolor: linear-gradient(90deg, rgba(255,164,204,1) 51%, rgba(0,0,0,1) 51%, rgba(0,0,0,1) 100%, rgba(255,164,204,1) 100%);
+
+    --branco: #fff;
+    --preto: #000;
+    --roxo-claro: #945c6e;
+    --rosa-claro: #ffa4cc;
+    --rosa-claro-opacity: rgba(255, 164, 204, .3);
+    --azul-ceu: #838599;
+    --cinza: #ab9f9c;
+    --cinza-escuro: #444045;
+    --cinza-claro: #DFD7D5;
+    --cinza-bg: #565c5e;
+
+
+    --azul-escuro: #112432;
+    --azul-escuro2: #1f415b;
+    --cinza-esverdeado: #5e7783;
+    --roxo: #4d1635;
+    --cinza-suave: #9e9199;
+    --light-blue: #336e9a;
+    --test-blue: #1c384d;
+    --test-blue-up: #22445d;
+    
+    --cinza-light: #d0d1d3;
+    --light-white: #f7f9fa;
+
+    --gradient-color: rgb(9,19,25);
+    --gradient-color: linear-gradient(45deg, rgba(9,19,25,1) 0%, rgba(19,37,51,1) 50%, rgba(31,65,91,1) 100%);
+
+
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+
+}
+
+html{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+}
+
+html, body{
+    width: 100%;
+    background: var(--preto);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.height-default{
+    height: 100vh;
+}
+
+.height-extended{
+    height: 130vh;
+}
+
+.low-height{
+    height: 70vh;
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,38 @@
+.obrigado_content{
+    width: 100%;
+    height: 100vh;
+    background: var(--gradient-color);
+    padding: 2rem 9% 3rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+.obrigado_content h2{
+    font-size: 5vmax;
+    color: var(--cinza-light);
+}
+
+.obrigado_content p{
+    font-size: 3vmax;
+    color: var(--branco);
+}
+
+.obrigado_content a{
+    padding: 2rem 3rem;
+    background: var(--cinza-light);
+    color: var(--preto);
+    font-size: 5vh;
+    box-shadow: 1px 1px 5px rgba(0,0,0, .1);
+    font-weight: 500;
+    transition: .5s ease;
+}
+
+.obrigado_content a:hover{
+   transform: scale(1.1); 
+   transition: .5s ease;
+}

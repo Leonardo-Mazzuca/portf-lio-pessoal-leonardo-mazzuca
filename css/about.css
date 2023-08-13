@@ -1,0 +1,282 @@
+.about{
+    background: var(--test-blue);
+    padding: 1em 0;
+    height: 130vh;
+
+    
+}
+
+.about__align{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4em;
+}   
+
+.box__img_pessoal_about{
+    width: 40%;
+    height: 70vh;
+    border: 1px solid var(--preto);
+    border-radius: var(--border-radius-default);
+}
+
+.about__display{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.about__display_tiulo{
+    color: var(--azul-escuro);
+    font-weight: 700;
+    font-size: 5vmin;
+}
+
+.about__display__titulo_secundario {
+    color: var(--cinza-light);
+    font-weight: 400;
+    font-size: var(--font-size-default);
+    padding: 0.5em 0;
+    position: relative;
+
+
+}
+
+.about__display__titulo_secundario::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    right: 81.5%;
+    width: 18%;
+    height: 3px; 
+    background-color: var(--cinza); 
+}
+
+.about__display_texto{
+    color: var(--branco);
+    font-size: 2.5vmin;
+    font-weight: 300;
+}
+
+.about__descricoes_expecificas{
+    border: 1px solid var(--azul-escuro);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.lista__items_pessoais{
+    column-count: 2;
+    column-gap: 3em;
+    padding: 1em;
+}
+
+.img_pessoal_display_about img{
+    width: 30vw;
+}
+
+.item_pessoal_desc{
+    color: var(--cinza-light);
+    font-size: 1.7vmin;
+    padding: .6em 0;
+
+}
+
+.ancora__dowload_curriculo{
+    color: var(--branco);
+    font-size: 2vmin;
+    width: 50%;
+    padding: 1em;
+    text-align: center;
+    background: var(--azul-escuro);
+    transition: .8s;
+}
+
+.ancora__dowload_curriculo:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px var(--azul-escuro2);
+    transition: .5s;
+    font-size: 2.5vmin;
+}
+
+
+@media (max-width: 600px) {
+    .about__descricoes_expecificas{
+        width:350px;
+    }
+
+    .lista__items_pessoais{
+        padding: 0;
+    }
+}
+
+@media (max-width: 834px) {
+
+    .about{
+        height: 180vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .about__align{
+        flex-direction: column-reverse;
+    }
+
+    .about__display__titulo_secundario::after{
+        display: none;
+    }
+
+    .about__display__titulo_secundario{
+        border-bottom: 1px solid var(--cinza);
+        font-size: 3vh;
+    }
+
+    .about__display_tiulo{
+        font-size: 5vh;
+    }
+
+    .about__display_texto{
+        font-size: 2.5vh;
+        margin: 1em 0;
+        width: 90%;
+    }
+
+
+    .about__display{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       text-align: center;
+    }
+
+    .about__descricoes_expecificas{
+        max-width: 500px;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .lista__items_pessoais{
+       display: flex;
+       flex-direction: column;
+       padding: 1em;
+    }
+
+    .item_pessoal_desc{
+        font-size: 2vh;
+        margin: 0.4em 0;
+    }
+
+    .ancora__dowload_curriculo{
+        height: 7vh;
+        text-align: center;
+        font-size: 2vh;
+        width: 90%;
+        white-space: nowrap;
+    }
+
+    .box__img_pessoal_about{
+        height: 30vh;
+        width: 30vh;
+    
+     
+    }
+
+    .img_pessoal_display_about img{
+        width: 50vw;
+    }
+}
+
+@media (min-width: 835px) and (max-width: 1200px){
+
+    .about{
+        height: 200vh;
+    }
+
+    .about__align{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding: 2em;
+    }
+
+    .about__display_texto{
+        font-size: 3vh;
+        margin: 1em 0;
+        width: 90%;
+    }
+
+    .about__display{
+       width: 100%;
+       height: 90vh;
+       display: flex;
+       align-items: center;
+       text-align: center;
+    }
+
+    .about__descricoes_expecificas{
+        width: 95%;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    .img_pessoal_display_about img{
+        width: 50vw;
+    }
+
+
+    .item_pessoal_desc{
+        font-size: 2vh;
+    }
+
+    .ancora__dowload_curriculo{
+        height: 7vh;
+        text-align: center;
+        font-size: 2vh;
+        width: 80%;
+    }
+
+    .box__img_pessoal_about{
+        height: 40vh;
+        width: 45vw;
+        padding: 1em;
+     
+    }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+    .about{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .about__descricoes_expecificas{
+        width: 100%;
+    }
+
+    
+}
+
+
+    
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+.apresentacao{
+    background: var(--gradient-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+.box__display_img_pessoal{
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    padding: 5rem 5% 2rem;
+
+}
+
+
+.home-content{
+    width: 100%;
+    text-align: start;
+    margin: 2em 0;
+    height: 40vh;
+}
+
+.home-content{
+    visibility: hidden;
+}
+
+.home-content h2{
+    font-size: 3.5vh;
+    font-weight: 700;
+    font-family: var(--font-title);
+    color: var(--branco);
+}
+
+.home-content h1{
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--branco);
+    padding: 0.2em 0;
+    line-height: 1.3;
+}
+
+.display__funcao{
+    color: var(--branco);
+}
+
+
+
+.img_pessoal_display img{
+    width: 45vw;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+
+.texto-mulit{
+    color: var(--light-blue);
+}
+
+@keyframes float {
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+
+.display__descricao{
+    font-size: 2.5vh;
+    color: var(--branco);
+}
+
+
+
+@media (max-width: 834px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .apresentacao{
+        height: 100vh;
+    }
+
+
+    .home-content{
+        max-width: 100%;
+    }
+
+    .img_pessoal_display img{
+        width: 90vw;
+        margin: auto;
+    }
+    
+
+    .box__display_img_pessoal{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 835px) and (max-width: 1200px){
+
+    .apresentacao{
+        height: 130vh;
+    }
+
+
+    .img_pessoal_display img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .box__display_img_pessoal{
+        flex-direction: column; 
+    }
+
+    .img_pessoal_display{
+
+        max-width: 80%;
+   
+       }
+   
+       .home-content{
+           max-width: 100%;
+       }
+   
+       .img_pessoal_display img{
+           width: 100%;
+           margin: auto;
+       }
+
+}

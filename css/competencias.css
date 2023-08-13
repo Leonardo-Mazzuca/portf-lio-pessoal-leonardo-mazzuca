@@ -1,0 +1,177 @@
+.competencias{
+    background: var(--azul-escuro);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.competencia_content{
+    width: 95%;
+    margin: 1em 0;
+    padding: 2rem 9%;
+}
+
+.habilidades__titulo{
+    color: var(--cinza-light);
+    font-weight: 700;
+    font-size: 5vmin;
+}
+
+.habilidades__titulo_secundarios{
+    color: var(--branco);
+    font-weight: 400;
+    font-size: var(--font-size-default);
+    margin-top: 1em;
+    padding: 0.5em 0;
+    position: relative;
+}
+
+.habilidades__titulo_secundarios::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    right: 81.5%;
+    width: 18%;
+    height: 3px; 
+    background-color: var(--branco); 
+}
+
+
+
+.box__show_habilidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+    height: 50vh;
+
+}
+
+.box_habilidade{
+    width: 30%;
+    height: 40vh;
+    border-radius: var(--border-radius-default);
+    background: var(--cinza-suave);
+    text-align: start;
+    padding: 1em;
+    box-shadow: -1px -1px 1px var(--cinza-light);
+    transition: .5s ease;
+}
+
+.box_habilidade:hover{
+    transition: .5s ease;
+    box-shadow: 1px 1px 10px var(--preto);
+    background: var(--azul-escuro);
+    
+}
+
+.box_habilidade:hover h2{
+    transition: .5s ease;
+    color: var(--branco);
+    
+}
+
+.habilidade__titulo{
+    font-size: var(--font-size-default);
+    font-weight: 700;
+    color: var(--azul-escuro);
+    margin: 0.5em 0;
+    transition: .5s ease;
+
+}
+
+.habilidade__texto{
+    font-size: 2vh;
+    color: var(--branco);
+    margin-bottom: 1em;
+ 
+}
+
+.icon__habilidade{
+    color: var(--roxo);
+    font-size: 5vmin;
+
+}
+
+.acessar-btn{
+    text-align: center;
+    color: var(--cinza-light);
+    display: none;
+    
+}
+
+@media (max-width: 834px) {
+
+
+    .display__habilidades_titulos{
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 6rem;
+        height: 40vh;
+        max-width: 90%;
+    }
+
+    .habilidades__titulo_secundarios::after {
+        display: none;
+    }
+
+    .habilidades__titulo{
+        font-size: 4vh;
+    
+    }
+
+    .habilidades__titulo_secundarios{
+        font-size: 3vh;
+        border-bottom: 2px solid var(--cinza);
+        
+    }
+
+    .box__show_habilidades{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .box_habilidade{
+        width: 90%;
+    }
+
+    .habilidade__titulo, 
+    .habilidade__titulo,
+    .icon__habilidade{
+        font-size: 3.5vh;
+    }
+
+
+
+
+
+}
+
+@media (min-width: 835px) and (max-width: 1200px){
+
+
+    .display__habilidades_titulos{
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 6rem;
+        height: 40vh;
+        max-width: 90%;
+    }
+
+
+
+    .box__show_habilidades{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .box_habilidade{
+        width: 100%;
+    }
+
+}
+

@@ -1,0 +1,356 @@
+.contato{
+    background: var(--test-blue);
+    min-height: 140vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9% 2rem;
+}
+
+.contato__content{
+    width: 90%;
+    height: 100vh;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+
+.contato__titulo{
+    color: var(--cinza-light);
+    font-size: 5vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    text-align: start;
+}
+
+.contato__titulo::after{
+    content: '';
+    position: absolute;
+    bottom: -5px; 
+    left: 12%;
+    width: 40%;
+    height: 3px; 
+    background-color: var(--cinza-esverdeado); 
+}
+
+
+.box__itens_contato{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.img__pessoal img{
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.box__itens{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    margin: 0 1.5em;
+    transition: .8s;
+    max-width: 300px;
+}
+
+.box__titulo-icon{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.box__itens:hover{
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+.box__itens:hover .box__item_dado{
+    color: var(--rosa-claro);
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+.icon__box_contato{
+    color: var(--roxo);
+    padding: 0 0.3em;
+    font-size: 2em;
+}
+
+.box__item_titulo{
+    color: var(--cinza-light);
+    font-size: 3vh;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.box__item_dado{
+    color: var(--branco);
+    font-size: 2vh;
+    font-family: var(--font-about);
+    margin: 1em 0;
+    transition: .8s;
+    padding-left: 3rem;
+    
+}
+
+
+
+
+.content__entrar_em_contato{
+    width: 100%;
+    padding: 1.5em;
+    gap: 1em;
+    margin: 2rem auto;
+    display: flex;
+}
+
+.contato__entrar_textos{
+    width: 40%;
+    height: 50vh;
+    padding: 1em;
+}
+
+
+.entrar__em_contato_titulo{
+    color: var(--cinza-light);
+    font-size: 3vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: start;
+    margin-top: 1rem;
+
+}
+
+.texto__entrar_em_contato{
+    color: var(--branco);
+    font-family: var(--font-about);
+    font-size: 2.5vh;
+    margin: 1em 0;
+    font-weight: 300;
+    text-align: start;
+}
+
+.content__entrar_em_contato form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contato__content form .box__input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contato__content form .box__input input,
+.contato__content form textarea{
+    width: 93%;
+    padding: .5rem;
+    font-size: 1.6rem;
+    color: var(--branco);
+    margin: .7rem;
+    background: var(--cinza-light);
+    max-height: 26vh;
+    outline: none;
+    border: none;
+}
+
+
+.contato__content form .box__input input{
+    width: 45%;
+    outline: none;
+}
+
+.contato__content textarea{
+    resize: none;
+}
+
+.btn__enviar{
+    background: var(--branco);
+    padding: 0.5rem 8rem ;
+    outline: none;
+    border: none;
+    
+}
+
+.btn__limpar{
+    background: var(--branco);
+    padding: 0.5rem 3rem ;
+    outline: none;
+    border: none;
+}
+
+#confirmation-box_item{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    font-size: 2vh;
+}
+
+#confirmation-box_item.show-item{
+    opacity: 1;
+  }
+
+
+
+
+@media (max-width: 834px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .contato{
+        height: auto;
+    }
+
+
+    .contato__content{
+        height: 250vh;
+    }
+
+
+    .box__itens_contato{
+        flex-direction: column-reverse;
+        height: 130vh;
+        gap: 2em;
+        margin-top: 40px;
+    
+    
+    }
+
+    .box__itens{
+        margin: 1rem 0;
+    }
+
+    .box__item_dado{
+        padding: 0;
+    }
+
+    .box__titulo-icon{
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+
+    .box__titulo-icon p{
+        font-size: 1.5rem;
+    }
+
+    .content__entrar_em_contato{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contato__entrar_textos{
+        width: 100%;
+        text-align: start;
+        height: auto;
+    }
+
+
+    .icon__box_contato{
+        font-size: 3em;
+    }
+
+
+    .contato__content form .box__input input,
+    .contato__content form textarea{
+        min-width: 95%;
+        font-size: 2rem;
+        padding: .8rem;
+
+    }
+    .contato__content form .box__input input{
+        width: 300px;
+        padding: .8rem 2rem;
+        font-size: 3vh;
+    }
+
+    .btn__enviar, .btn__limpar{
+        width: 300px;
+        padding: .8rem 2rem;
+        font-size: 2vh;
+        margin-bottom: 2rem;
+    }
+
+    .contato__content form .box__input input::placeholder {
+        font-size: 2.5rem; 
+    }
+
+    .img__pessoal img{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    #confirmation-box_item{
+        white-space: nowrap;
+        font-size: 2vh;
+    }
+    
+    
+
+
+
+}
+
+@media (min-width: 835px) and (max-width: 1300px){
+
+
+    .contato__content{
+        height: 170vh;
+    }
+
+
+    .box__itens_contato{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 2em;
+        row-gap: 2em;
+        margin-top: 3em;
+        align-items: center;
+        justify-items: center;
+        margin: 2em 0;
+        height: 50vh;
+
+    }
+
+    .img__pessoal img{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .content__entrar_em_contato{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+}
+
+
+    .contato__entrar_textos{
+        width: 100%;
+        height: auto;
+    }
+
+
+}

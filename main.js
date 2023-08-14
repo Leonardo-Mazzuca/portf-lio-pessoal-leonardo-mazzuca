@@ -106,7 +106,7 @@ document.getElementById('send-btn').addEventListener('click', function(){
 
 
   const templateParams = {
-    to_email: 'devMazzuca@gmail.com',
+    to_email: 'devmazzuca@gmail.com',
     message: feedBackInput,
     to_name: toName,
     from_name: fromName

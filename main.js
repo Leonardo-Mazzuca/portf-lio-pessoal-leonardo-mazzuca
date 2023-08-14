@@ -112,7 +112,7 @@ document.getElementById('send-btn').addEventListener('click', function(){
     from_name: fromName
   };
 
-  emailjs.send('service_bwvy3fs', templateId, templateParams, userId).then(function(response){
+  emailjs.send('service_81mn8un', templateId, templateParams, userId).then(function(response){
     console.log('e-mail enviado: ', response);
     document.getElementById('fromNameInput').value = '';
     document.getElementById('feedbackInput').value = '';
